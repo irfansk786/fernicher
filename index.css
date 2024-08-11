@@ -3,6 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    font-family:  "Playfair Display", serif;
+}
 .main{
     width: 100%;
     background-color: rgb(205 202 202);
@@ -15,14 +18,21 @@
     width: 100%;
     height: 400px;
     background-color: aqua;
+    position: fixed;
+   
+    
 
     
 }
 .nav{
     width: 100%;
-    height: 30px;
-    background-color: rgb(205 202 202);
- 
+    height: 50px;
+    background-color:rgb(205 202 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+   
  
 }
 .navchild{
@@ -36,9 +46,21 @@
 }
 .navchild a{
    text-decoration-line: none;
-   color: rgb(15, 11, 11);
-   font-size: 18ox;
+   color: white;
+   font-size: 18px;
    
+}
+.navchild2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.navchild2>img{
+    width: 100px;
+    height: 100px;
+   
+
 }
 .box1{
     width: 100%;
@@ -91,8 +113,8 @@
 }
 .secondmain{
     width: calc(81% + 2px);
-    height: 100vh;
-    background-color:red ; 
+    height: 210vh;
+    background-color:rgb(205 202 202);
     margin: auto;
     
 }
@@ -152,8 +174,8 @@
 }
 .secondin{
     width: 100%;
-    height: 200px;
-    background-color:  rgb(205 202 202);
+    height: auto;
+    background-color: rgb(205 202 202);
    
 
 }
@@ -170,17 +192,18 @@
     height: 200px;
     background-color: white;
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
-   
+
 }
 .con1{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 140px;
     background-color: white;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     border: 3px solid gray;
    
@@ -188,12 +211,181 @@
 
 }
 .con1 img{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border: 3px solid gray;
     cursor: pointer;
 
-}
 
+}
+.third3box{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(205 202 202);
+}
+.thirdbox1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+     letter-spacing: 1px;
+     margin-top: 10px;
+     
+}
+.thirdbox2{
+    background-color: rgb(205 202 202);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+
+}
+.btn1{
+    width: 150px;
+    height:35px;
+    background-color: orange; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 3px;
+    border: 2px double gray;
+    cursor: pointer;
+
+}
+.btn2{
+    width: 170px;
+    height:35px;
+    background-color: orange; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 3px;
+    border: 2px double gray;
+    cursor: pointer;
+
+}
+.btn3{
+    width: 150px;
+    height:35px;
+    background-color: orange; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 3px;
+    border: 2px double gray;
+    cursor: pointer;
+
+}
+.thirdbox3
+{
+    width: 100%;
+    height: 550px;
+    background-color :rgb(255, 255, 255);
+   
+}
+.thirdbox3{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+   margin-top: 30px;
+    
+
+}
+.containers{
+    width: 200px;
+    height:250px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.containers >img{
+    width: 250px;
+    height: 250px;
+    margin-top: -40px;
+    
+}
+.containers >span{
+   position: relative;
+   top: -20px;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color:black;
+}
+footer >p{
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+footer ol>li
+{
+    color: white;
+    font-size: 20px;
+     line-height: 30px;
+    
+}
+.Order{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 20px;
+
+}
+.Order>p{
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 3px;
+ 
+}
+.Order>i{
+   color: cyan;
+   font-size: 40px;
+   cursor: pointer;
+    
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+   
+
+
+
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.logo>i{
+    color:cyan;
+    font-size: 40px;
+
+  
+}
+.logo:hover{
+    background-color:black;
+  
+}
 
 
